@@ -11,38 +11,37 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css" />
-    <title>BEA</title>
+    <title>Back End Academy</title>
   </head>
   <body>
-    <div class="container mt-2 main-container ps-0 pe-0">
-      <!-- nav container start -->
-      <div class="container border container-nav-1">
-        <nav class="navbar">
-          <img
-            src="/Images/bea-logo.png"
-            alt="logo"
-            width="200px"
-            class="logo"
-          />
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="/index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">How It Works</a>
-            </li>
-            <li class="nav-item">
-              <a href="/backendexplained.html" class="nav-link"
-                >Backend Explained</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="apply.html" class="nav-link">Apply</a>
-            </li>
-          </ul>
-        </nav>
+
+    <!-- nav section -->
+    <div class="container-fluid h6 bg-light">
+      <div class="navbar navbar-expand-lg">
+          <a href="/index.html" class="navbar-brand">
+              <img src="bea-logo.png" width="200px">
+          </a>
+          <button class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#NavBarMenu"
+          >
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Followed by what's inside the navbar button -->
+          <div class="collapse navbar-collapse justify-content-sm-end" id="NavBarMenu">
+              <ul class="navbar-nav text-center">
+                  <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="/howitworks.html" class="nav-link">How It Works</a></li>
+                  <li class="nav-item"><a href="/backendexplained.html" class="nav-link">Backend Explained</a><li>
+                  <li class="nav-item"><a href="apply.html" class="nav-link">Apply</a><li>
+          </div>
       </div>
+  </div>
 
       <!-- Start of Hero Section-->
 
@@ -56,136 +55,110 @@
           <br />
           Create "job-worthy" projects, and get hired as a top-tier developer!
         </p>
-        <div class="col-12 mt-5 mb-5">
-          <button class="btn btn-primary mb-5">Learn More</button>
-        </div>
+        <button class="mt-5 mb-5 btn btn-primary">
+          <a href="/apply.html" class=" primary-btn-text text-white">Learn More</a>
+        </button>
       </div>
       <!-- end div for hero section -->
     </div>
     <!--end  div for the nav and hero container -->
 
+    <!-- start of curriculum box -->
     <div
-      class="container rounded rounded-5 curriculum-box text-center h5 mt-4 fw-light"
+      class="container curriculum-box rounded rounded-5 h5 mt-4 fw-light"
     >
-      <h2 class="display-4 text-center text-white pt-3 mb-5">
+      <h2 class="display-4 text-center pt-3 mb-5 text-white">
         What You'll Learn
       </h2>
+    
+      <div class="row justify-content-center">
+    <!-- card 1-->
+            <div class="card col-6 m-3 card-box" style="width: 20rem">
+              <img src="/Course 1.png" class="card-img img-thumbnail" alt="" />
+              <div class="card-body">
+                <p class="card-title">Course 1</p>
+                <p class="card-text h6 fw-lighter text-center">
+                  You’ll be introduced to the core web development technologies like HTML and CSS.
+                </p>
+              </div>
+            </div>
 
-      <!-- start of box 1 -->
-      <div class="container row ms-0 me-0">
-        <div class="grid col-4">
-          <div class="card card-box" style="width: 17rem">
-            <div class="card-body">
-              <h4 class="card-title">Month 1 - How the Web Works</h4>
-              <h6 class="card-subtitle">
-                Learn the foundation of becoming an effective backend developer
-              </h6>
-              <p class="card-text">
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- End of box 1 -->
-        <!-- start of box 2-->
-        <div class="grid col-4">
-          <div class="card card-box" style="width: 17rem">
-            <div class="card-body">
-              <h4 class="card-title">
-                Month 2 - Javascript, the Language of the Web
-              </h4>
-              <h6 class="card-subtitle">
-                Learn the foundation of becoming an effective backend developer
-              </h6>
-              <p class="card-text">
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- End of box 2 -->
-        <!-- start of box 3 -->
-        <div class="grid col-4">
-          <div class="card card-box" style="width: 17rem">
-            <div class="card-body">
-              <h4 class="card-title">Month 3 - Data Base and How They Work</h4>
-              <h6 class="card-subtitle">
-                Learn the foundation of becoming an effective backend developer
-              </h6>
-              <p class="card-text">
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- End of box 3 -->
-      </div>
-      <br /><br />
-      <!-- start of box 4 -->
-      <div class="container row">
-        <div class="grid col-4">
-          <div class="card card-box" style="width: 17rem">
-            <div class="card-body">
-              <h4 class="card-title">Month 4 - REST API</h4>
-              <h6 class="card-subtitle">
-                Learn the foundation of becoming an effective backend developer
-              </h6>
-              <p class="card-text">
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- End of box 4 -->
-        <!-- start of box 5-->
-        <div class="grid col-4">
-          <div class="card card-box" style="width: 17rem">
-            <div class="card-body">
-              <h4 class="card-title">Month 5 - Big Project</h4>
-              <h6 class="card-subtitle">
-                Learn the foundation of becoming an effective backend developer
-              </h6>
-              <p class="card-text">
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- End of box 5 -->
-        <!-- start of box 6 -->
-        <div class="grid col-4">
-          <div class="card card-box" style="width: 17rem">
-            <div class="card-body">
-              <h4 class="card-title">Month 6 - Putting It All Together</h4>
-              <h6 class="card-subtitle">
-                Learn the foundation of becoming an effective backend developer
-              </h6>
-              <p class="card-text">
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-                <li>You will learn a lesson here</li>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- End of box 6 -->
-      </div>
+<!-- card 2 -->
+
+<div class="card col-6 m-3 card-box" style="width: 20rem">
+  <img src="/Course2.png" class="card-img img-thumbnail" alt="" />
+  <div class="card-body">
+    <p class="card-title">Course 2</p>
+    <p class="card-text h6 fw-lighter text-center">
+      You’ll dive deep into the Python ecosystem and learn popular modules, libraries and tools for Python. 
+  </div>
+</div>
+
+<!-- card 3 -->
+
+<div class="card col-6 m-3 card-box" style="width: 20rem">
+  <img src="/Course3.png" class="card-img img-thumbnail" alt="" />
+  <div class="card-body">
+    <p class="card-title">Course 3</p>
+    <p class="card-text h6 fw-lighter text-center">
+      Learn how modern software developers collaborate across the world without messing up each other's code.
+    </p>
+  </div>
+</div>
+
+<!-- card 4 -->
+
+<div class="card col-6 m-3 card-box" style="width: 20rem">
+  <img src="/Course4.png" class="card-img img-thumbnail" alt="" />
+  <div class="card-body">
+    <p class="card-title">Course 4</p>
+    <p class="card-text h6 fw-lighter text-center">
+      You'll practice basic creation and data selection tasks with the use of Structured Query Language (SQL) commands.
+    </p>
+  </div>
+</div>
+
+
+<!-- card 5 -->
+
+<div class="card col-6 m-3 card-box" style="width: 20rem">
+  <img src="/Course5.png" class="card-img img-thumbnail" alt="" />
+  <div class="card-body">
+    <p class="card-title">Course 5</p>
+    <p class="card-text h6 fw-lighter text-center">
+      You will use the Django web framework to build, secure and administer a web server.
+    </p>
+  </div>
+</div>
+
+<!-- card 6 -->
+
+<div class="card col-6 m-3 card-box" style="width: 20rem">
+  <img src="/Course6.png" class="card-img img-thumbnail" alt="" />
+  <div class="card-body">
+    <p class="card-title">Course 6</p>
+    <p class="card-text h6 fw-lighter text-center">
+      Delve deeper into the processes and concepts behind APIs and their infrastructure.
+    </p>
+  </div>
+</div>
+
+<!-- card 7 -->
+<div class="card col-6 m-3 card-box" style="width: 20rem">
+  <img src="/Course7.png" class="card-img img-thumbnail" alt="" />
+  <div class="card-body">
+    <p class="card-title">Course 7</p>
+    <p class="card-text h6 fw-lighter text-center">
+      You’ll test your abilities in full-stack back-end development in a real-life scenario by composing a Django web app. 
+    </p>
+  </div>
+</div>
+
+
+
+
+</div>
+            <!-- end of row -->
     </div>
     <!-- end of what curriculum section -->
 
@@ -196,7 +169,7 @@
       </h1>
       <div class="testimonial-box text-center mb-5">
         <img
-          src="/Images/testimonial1.png"
+          src="testimonial1.png"
           alt="student#1"
           class="text-center mt-3 rounded-circle mb-4 border border-4"
           height="140px
@@ -214,7 +187,7 @@
         </div>
         <br /><br />
         <img
-          src="/Images/testimonial2.png"
+          src="testimonial2.png"
           alt="student#1"
           class="text-center mt-3 rounded-circle mb-4 border border-4"
           height="140px
@@ -240,35 +213,279 @@
         Your Questions Answered
       </h2>
       <!-- accordion box -->
+     
+      <div class="accordion container mb-3" id="accordion-1">
+        <!-- Item 1 -->
+                <div class="accordion-item item1">
+                    <!-- header -->
+                        <h2 class="accordion-header" id="headingOne">
+                            <!-- button -->
+                            <button class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#accordion-1-body"
+                            aria-expanded="true"
+                            aria-controls="accordion-1-body"> 
+                            <i class="bi bi-arrow-repeat"> Is this course really 100% online? Do I need to attend any classes in person?</i> 
+                            </button> 
+                        </h2>
+                            <!-- for toggle and aria change to false and collapsed to close onload -->
+                 
+                            <!-- display when collapsed -->
+                            <div class="accordion-collapse" id="accordion-1-body" aria-labelledby="headingOne"
+                            data-bs-parent="#accordion-1">
+                            <!-- accordion body -->
+                            <div class="accordion-body">
+                                    <p>Classes are recorded via screencast and students are expected to watch the video lessons and finish each course in their own pace. This is a "self-taught" style program but the beauty of "Backend Academy" is you'll get assistance and support from the instructors and the community as long as you still have your membership</p>
+                            </div>
+    
+                            </div>
+                </div>
+     </div>
+        <!-- Item 2 -->
+        <div class="accordion container mb-3" id="accordion-2">
+                  <div class="accordion-item item2">
+                      <!-- header -->
+                          <h2 class="accordion-header" id="headingTwo">
+                              <!-- button -->
+                              <button class="accordion-button"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#accordion-2-body"
+                              aria-expanded="true"
+                              aria-controls="accordion-2-body"> 
+                              <i class="bi bi-arrow-repeat"> How many months does it take to finish the program?</i> 
+                              </button> 
+                          </h2>
+                              <!-- for toggle and aria change to false and collapsed to close onload -->
+                   
+                              <!-- display when collapsed -->
+                              <div class="accordion-collapse collapse" id="accordion-2-body" aria-labelledby="headingTwo"
+                              data-bs-parent="#accordion-2">
+                              <!-- accordion body -->
+                              <div class="accordion-body">
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ab sit doloremque tenetur, dignissimos excepturi recusandae ducimus nam vero maiores iste dicta. Nobis minus, ipsum nulla repellendus nihil asperiores dolores?</p>
+                              </div>
+      
+                              </div>
+                  </div>
+       </div>
 
-      <div class="accordion" id="questions">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button"
-              data-bs-toggle="collapse"
-              data-bs-target="#question1"
-              aria-expanded="true"
-            >
-              1 - How many hours a day do I need to commit?
-            </button>
-          </h2>
-          <div
-            id="question1"
-            class="accordion-collapse collapse show"
-            data-bs-parent="questions"
-          >
-            <div class="accordion-body">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Aspernatur error suscipit dignissimos ad quod! Omnis iusto
-                architecto, ipsam molestiae excepturi alias! Soluta, placeat
-                magni! Doloribus, esse pariatur. Veniam, modi beatae.
-              </p>
-            </div>
-          </div>
+      <!-- Item 3 -->
+     
+      <div class="accordion container mb-3" id="accordion-3">
+        <div class="accordion-item item3">
+            <!-- header -->
+                <h2 class="accordion-header" id="headingThree">
+                    <!-- button -->
+                    <button class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#accordion-3-body"
+                    aria-expanded="true"
+                    aria-controls="accordion-3-body"> 
+                    <i class="bi bi-arrow-repeat"> What are the pre-requisites for enrolling in this program?</i> 
+                    </button> 
+                </h2>
+                    <!-- for toggle and aria change to false and collapsed to close onload -->
+         
+                    <!-- display when collapsed -->
+                    <div class="accordion-collapse collapse" id="accordion-3-body" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion-3">
+                    <!-- accordion body -->
+                    <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ab sit doloremque tenetur, dignissimos excepturi recusandae ducimus nam vero maiores iste dicta. Nobis minus, ipsum nulla repellendus nihil asperiores dolores?</p>
+                    </div>
+
+                    </div>
         </div>
-      </div>
+</div>
+
+      <!-- item 4 -->
+      <div class="accordion container mb-3" id="accordion-4">
+        <div class="accordion-item item4">
+            <!-- header -->
+                <h2 class="accordion-header" id="headingFour">
+                    <!-- button -->
+                    <button class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#accordion-4-body"
+                    aria-expanded="true"
+                    aria-controls="accordion-4-body"> 
+                    <i class="bi bi-arrow-repeat">What jobs will this prepare me for?</i> 
+                    </button> 
+                </h2>
+                    <!-- for toggle and aria change to false and collapsed to close onload -->
+                    <!-- display when collapsed -->
+                    <div class="accordion-collapse collapse" id="accordion-4-body" aria-labelledby="headingFour"
+                    data-bs-parent="#accordion-4">
+                    <!-- accordion body -->
+                    <div class="accordion-body">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ab sit doloremque tenetur, dignissimos excepturi recusandae ducimus nam vero maiores iste dicta. Nobis minus, ipsum nulla repellendus nihil asperiores dolores?</p>
+                    </div>
+                    </div>
+        </div>
+</div>
+   <!-- item 5 -->
+   <div class="accordion container mb-3" id="accordion-5">
+    <div class="accordion-item item5">
+        <!-- header -->
+            <h2 class="accordion-header" id="headingFive">
+                <!-- button -->
+                <button class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#accordion-5-body"
+                aria-expanded="true"
+                aria-controls="accordion-5-body"> 
+                <i class="bi bi-arrow-repeat"> How much is the enrollment fee?</i> 
+                </button> 
+            </h2>
+                <!-- for toggle and aria change to false and collapsed to close onload -->
+                <!-- display when collapsed -->
+                <div class="accordion-collapse collapse" id="accordion-5-body" aria-labelledby="headingFive"
+                data-bs-parent="#accordion-5">
+                <!-- accordion body -->
+                <div class="accordion-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ab sit doloremque tenetur, dignissimos excepturi recusandae ducimus nam vero maiores iste dicta. Nobis minus, ipsum nulla repellendus nihil asperiores dolores?</p>
+                </div>
+                </div>
+    </div>
+</div>
+
+        <!-- item 6 -->
+        <div class="accordion container mb-3" id="accordion-6">
+          <div class="accordion-item item6">
+              <!-- header -->
+                  <h2 class="accordion-header" id="headingSix">
+                      <!-- button -->
+                      <button class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-6-body"
+                      aria-expanded="true"
+                      aria-controls="accordion-6-body"> 
+                      <i class="bi bi-arrow-repeat"> Do I need a certain device to take this course?</i> 
+                      </button> 
+                  </h2>
+                      <!-- for toggle and aria change to false and collapsed to close onload -->
+                      <!-- display when collapsed -->
+                      <div class="accordion-collapse collapse" id="accordion-6-body" aria-labelledby="headingSix"
+                      data-bs-parent="#accordion-6">
+                      <!-- accordion body -->
+                      <div class="accordion-body">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ab sit doloremque tenetur, dignissimos excepturi recusandae ducimus nam vero maiores iste dicta. Nobis minus, ipsum nulla repellendus nihil asperiores dolores?</p>
+                      </div>
+                      </div>
+          </div>
+  </div>
+                <!-- item 7 -->
+                <div class="accordion container mb-3" id="accordion-7">
+                  <div class="accordion-item item7">
+                      <!-- header -->
+                          <h2 class="accordion-header" id="headingSeven">
+                              <!-- button -->
+                              <button class="accordion-button"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#accordion-7-body"
+                              aria-expanded="true"
+                              aria-controls="accordion-7-body"> 
+                              <i class="bi bi-arrow-repeat"> Do I need to take the courses in a specific order?</i> 
+                              </button> 
+                          </h2>
+                              <!-- for toggle and aria change to false and collapsed to close onload -->
+                              <!-- display when collapsed -->
+                              <div class="accordion-collapse collapse" id="accordion-7-body" aria-labelledby="headingSeven"
+                              data-bs-parent="#accordion-7">
+                              <!-- accordion body -->
+                              <div class="accordion-body">
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ab sit doloremque tenetur, dignissimos excepturi recusandae ducimus nam vero maiores iste dicta. Nobis minus, ipsum nulla repellendus nihil asperiores dolores?</p>
+                              </div>
+                              </div>
+                  </div>
+          </div>
+        <!-- item 8 -->
+        <div class="accordion container mb-3" id="accordion-8">
+          <div class="accordion-item item8">
+              <!-- header -->
+                  <h2 class="accordion-header" id="headingEight">
+                      <!-- button -->
+                      <button class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-8-body"
+                      aria-expanded="true"
+                      aria-controls="accordion-8-body"> 
+                      <i class="bi bi-arrow-repeat"> What is the difference between back-end and front-end developers?</i> 
+                      </button> 
+                  </h2>
+                      <!-- for toggle and aria change to false and collapsed to close onload -->
+                      <!-- display when collapsed -->
+                      <div class="accordion-collapse collapse" id="accordion-8-body" aria-labelledby="headingEight"
+                      data-bs-parent="#accordion-8">
+                      <!-- accordion body -->
+                      <div class="accordion-body">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ab sit doloremque tenetur, dignissimos excepturi recusandae ducimus nam vero maiores iste dicta. Nobis minus, ipsum nulla repellendus nihil asperiores dolores?</p>
+                      </div>
+                      </div>
+          </div>
+  </div>
+        <!-- item 9 -->
+        <div class="accordion container mb-3" id="accordion-9">
+          <div class="accordion-item item9">
+              <!-- header -->
+                  <h2 class="accordion-header" id="headingNine">
+                      <!-- button -->
+                      <button class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#accordion-9-body"
+                      aria-expanded="true"
+                      aria-controls="accordion-9-body"> 
+                      <i class="bi bi-arrow-repeat"> Why start a career in back-end development?</i> 
+                      </button> 
+                  </h2>
+                      <!-- for toggle and aria change to false and collapsed to close onload -->
+                      <!-- display when collapsed -->
+                      <div class="accordion-collapse collapse" id="accordion-9-body" aria-labelledby="headingNine"
+                      data-bs-parent="#accordion-9">
+                      <!-- accordion body -->
+                      <div class="accordion-body">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ab sit doloremque tenetur, dignissimos excepturi recusandae ducimus nam vero maiores iste dicta. Nobis minus, ipsum nulla repellendus nihil asperiores dolores?</p>
+                      </div>
+                      </div>
+          </div>
+  </div>
+                <!-- item 10 -->
+                <div class="accordion container mb-3" id="accordion-10">
+                  <div class="accordion-item item10">
+                      <!-- header -->
+                          <h2 class="accordion-header" id="headingTen">
+                              <!-- button -->
+                              <button class="accordion-button"
+                              type="button"
+                              data-bs-toggle="collapse"
+                              data-bs-target="#accordion-10-body"
+                              aria-expanded="true"
+                              aria-controls="accordion-10-body"> 
+                              <i class="bi bi-arrow-repeat">Can I just enroll in a single course?</i> 
+                              </button> 
+                          </h2>
+                              <!-- for toggle and aria change to false and collapsed to close onload -->
+                              <!-- display when collapsed -->
+                              <div class="accordion-collapse collapse" id="accordion-10-body" aria-labelledby="headingTen"
+                              data-bs-parent="#accordion-10">
+                              <!-- accordion body -->
+                              <div class="accordion-body">
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, ab sit doloremque tenetur, dignissimos excepturi recusandae ducimus nam vero maiores iste dicta. Nobis minus, ipsum nulla repellendus nihil asperiores dolores?</p>
+                              </div>
+                              </div>
+                  </div>
+          </div>
+        
+<!-- end of accordion container divs below-->
     </div>
 
     <!-- end of accordion section-->
@@ -281,27 +498,27 @@
         today!
       </h2>
       <div class="btn p-0 mt-5">
-        <a href="/enroll.html" class="button-join">Let Me Join!</a>
+        <a href="/apply.html" class="button-join">Let Me Join!</a>
       </div>
     </div>
     <!-- end of cta -->
 
     <!-- start of footer -->
 
-    <footer class="container mt-5">
-      <div class="row text-center footer-link">
-        <a class="col-4">Instagram</a>
-        <a class="col-4">Facebook</a>
-        <a class="col-4">8-7000-5555</a>
+    <footer class="container mt-5 ">
+      <div class="row text-center d-sm-flex">
+          <i class="bi bi-facebook col-4"> <a href="#">Facebook</a></i>
+        <i class="bi bi-instagram col-4"> <a href="#">Instagram</a></i>
+        <i class="bi bi-telephone-fill col-4">  <a href="#">8-7000-5555</a></i>
       </div>
-
       <div class="row text-center mt-3">
         <p class="mt-4">
-          ©2022 All Rights Reserved. Website produced by BEA Studios
+          ©2022 All Rights Reserved.  WD20P. Softies. Red Tolentino.
         </p>
       </div>
     </footer>
-
     <!-- end of footer -->
   </body>
 </html>
+
+

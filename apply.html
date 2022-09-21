@@ -11,60 +11,38 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css" />
-    <title>BEA</title>
+    <title>Back End Academy</title>
   </head>
   <body>
-    <div class="container mt-2 main-container ps-0 pe-0">
-      <!-- nav container start -->
-      <div class="container border container-nav-1">
-        <nav class="navbar">
-          <a href="/index.html"
-            ><img
-              src="/Images/bea-logo.png"
-              alt="logo"
-              width="200px"
-              class="logo"
-          /></a>
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="/index.html" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">How It Works</a>
-            </li>
-            <li class="nav-item">
-              <a href="/backendexplained.html" class="nav-link"
-                >Backend Explained</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="/apply.html" class="nav-link">Apply</a>
-            </li>
-          </ul>
-        </nav>
+    <!-- nav section -->
+    <div class="container-fluid h6 bg-light">
+      <div class="navbar navbar-expand-lg">
+          <a href="/index.html" class="navbar-brand">
+              <img src="bea-logo.png" width="200px">
+          </a>
+          <button class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#NavBarMenu"
+          >
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- Followed by what's inside the navbar button -->
+          <div class="collapse navbar-collapse justify-content-sm-end" id="NavBarMenu">
+              <ul class="navbar-nav text-center">
+                  <li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+                  <li class="nav-item"><a href="/howitworks.html" class="nav-link">How It Works</a></li>
+                  <li class="nav-item"><a href="/backendexplained.html" class="nav-link">Backend Explained</a><li>
+                  <li class="nav-item"><a href="apply.html" class="nav-link">Apply</a><li>
+          </div>
       </div>
+  </div>
 
-      <!-- Start of Hero Section-->
-
-      <!-- <div class="container mt-4 section-hero mb-5">
-        <h1 class="text-center display-4 pt-5 fw-semibold display-6">
-          Complete the application form, and we'll get back to you within 24
-          hours
-        </h1>
-        <p class="text-center h5 mt-4 fw-light">
-          Everything you need to know about the program will be answered in the
-          consultation call.
-        </p>
-        <p class="text-center h5 mt-4 fw-light">
-          This call will help us determine if we can help you achieve your
-          career goals.
-        </p>
-      </div> -->
-      <!-- end div for hero section -->
-    </div>
-    <!--end  div for the nav and hero container -->
-
+  
     <!-- start of application form -->
 
     <div class="container text-center pt-5">
@@ -159,17 +137,18 @@
             id="educational-attainment"
             class="form-control"
           >
-            <option>Senior Highschool Graduate</option>
+          
             <option>4/5-Year College Course Graduate</option>
+            <option>Senior Highschool Graduate</option>
             <option>Finished Masters/Doctorate</option>
           </select>
         </div>
         <br />
         <div class="w-75 fl-name">
-          <label for="why-radio" class="text-start why-coding mb-3"
+          <label for="why-radio" class="mt-4 ps-0 pe-5 pb-3 text-start"
             >Why Do You Want to Learn Back-End Programming? We'll be able to
             serve you better if we know your goals and main motivation for
-            wanting to join the program</label
+            wanting to join the program.</label
           >
           <div class="form-check why-radio">
             <input
@@ -179,7 +158,7 @@
               name="why-radio"
             />
             <label class="form-check-label ms-2" for="flexRadioDefault1">
-              Answer #1
+              I want to shift to a new career in tech!
             </label>
           </div>
           <div class="form-check why-radio">
@@ -190,7 +169,7 @@
               name="why-radio"
             />
             <label class="form-check-label ms-2" for="answer2">
-              Answer #2
+              I'm already employed in tech and I want to level-up my skills as a programmer
             </label>
           </div>
           <div class="form-check why-radio">
@@ -201,7 +180,7 @@
               name="why-radio"
             />
             <label class="form-check-label ms-2" for="answer3">
-              Answer #3
+              I need it to help me build my tech startup
             </label>
           </div>
           <div class="form-check why-radio">
@@ -211,11 +190,58 @@
               id="answer4"
               name="why-radio"
             />
-            <label class="form-check-label ms-2" for="answer4">
-              Answer #4
+            <label class="form-check-label ms-2 mb-4" for="answer4">
+              Programming seems cool
             </label>
           </div>
+          <div class="input-group w-100 fl-name mt-3 contact-number">
+            <label for="cnum" class="input-group-text text-wrap w-inherit">Contact No:</label>
+            <input type="text" id="cnum" class="form-control" placeholder="09xxxxxxxxx" maxlength="11" minlength="11">
         </div>
+        
+          <label for="text-area" class="mt-4 ps-0 pe-5 pb-3 text-start why-accept">Complete the sentence and type your short answer below. I deserve to get accepted because:</label>
+          <input type="text-area" class="form-control" id="text-area">
+
+          <!-- button /modal -->
+          <center>
+            <button class="btn btn-primary mt-5" type="button" data-bs-dismiss="modal" data-bs-target="#modal1" data-bs-toggle="modal">
+                Submit My Application Form
+        </button>
+    
+        <!-- main modal -->
+            <div class="modal fade" id="modal1" tabindex="-1">
+                    <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalTitle">
+                                    Hello Future Dev!</h5>
+                                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close">
+                                </button>
+                            </div>
+    <!-- body -->
+                                <div class="modal-body">
+                                    <p>Thank you for scheduling a consultation call. We will get back to you within 24 hours. This call will help us determine if we can help you achieve your career goals. Everything you need to know about the program will be answered in the
+                                      consultation call.</p>
+                                </div>
+    <!-- body -->
+    <!-- modal footer -->
+                                <div class="modal-footer ">
+                                    <button class="btn btn-primary text-center" type="button" data-bs-dismiss="modal">
+                                        Close
+                                        </button>
+                                </div>
+     <!-- modal footer -->
+                
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </center>
+         </a>
+        </div>
+
+
+
       </form>
     </div>
 
@@ -225,33 +251,23 @@
 
     <div class="container mt-4 section-hero mb-5 pt-5">
       <p class="text-center h6 mt-4 fw-light">
-        Complete the application form, and we'll get back to you within 24 hours
-      </p>
-      <p class="text-center h6 mt-4 fw-light">
-        Everything you need to know about the program will be answered in the
-        consultation call.
-      </p>
-      <p class="text-center h6 mt-4 fw-light">
-        This call will help us determine if we can help you achieve your career
-        goals.
+        Complete the application form, and we'll get back to you within 24 hours.
       </p>
     </div>
     <!-- start of footer -->
 
-    <footer class="container mt-5">
-      <div class="row text-center footer-link">
-        <a class="col-4">Instagram</a>
-        <a class="col-4">Facebook</a>
-        <a class="col-4">8-7000-5555</a>
+    <footer class="container mt-5 ">
+      <div class="row text-center d-sm-flex">
+          <i class="bi bi-facebook col-4"> <a href="#">Facebook</a></i>
+        <i class="bi bi-instagram col-4"> <a href="#">Instagram</a></i>
+        <i class="bi bi-telephone-fill col-4">  <a href="#">8-7000-5555</a></i>
       </div>
-
       <div class="row text-center mt-3">
         <p class="mt-4">
           ©2022 All Rights Reserved. Website produced by BEA Studios
         </p>
       </div>
     </footer>
-
     <!-- end of footer -->
   </body>
 </html>
