@@ -8,6 +8,10 @@
 
 #fdbe34; ;  */
 
+/* #006a55cd; */
+/* 
+#00d7ac; */
+
 /* Index Page  CSS*/
 
 /* font */
@@ -55,7 +59,7 @@ body {
   padding: 24px 36px;
   padding-bottom: 4em;
   margin: 0 auto;
-  background-color:#0bb996;
+  background-color:#00be98;
 }
 
 /* Card */
@@ -182,6 +186,17 @@ body {
   font-size: 14px;
 }
 
+.button-join {
+  padding: 20px 40px;
+}
+
 .button-join-text {
   font-size: 30px;
+}
+
+@media (max-width: 600px) {
+  .youtube {
+    width: 400px;
+    height: 215px;
+  }
 }
