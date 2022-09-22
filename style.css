@@ -36,6 +36,14 @@ body {
   color: #00d7ac;
 }
 
+.hero-text-header, .how-text{
+  margin-top: 130px !important;
+}
+
+.what-text, .app-form {
+  margin-top: 60px !important;
+}
+
 /* button */
 .btn {
   display: block;
@@ -53,6 +61,17 @@ body {
 .primary-btn-text {
   text-decoration: none;
 }
+
+.companies {
+  margin: 0 16px 16px;
+}
+
+.hero-section {
+  padding-bottom: 0;
+  min-height: 80vh;
+}
+
+
 
 .curriculum-box {
   width: 100%;
@@ -199,4 +218,19 @@ body {
     width: 400px;
     height: 215px;
   }
+}
+
+
+/* form container */
+
+.login-container {
+  flex-direction: column;
+  place-content: center;
+  margin-top: 150px;
+  width: 300px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
 }
