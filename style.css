@@ -230,10 +230,10 @@ body {
   font-size: 30px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .youtube {
-    width: 400px;
-    height: 215px;
+    width: 500px;
+    height: 315px;
   }
 }
 
@@ -319,4 +319,22 @@ body {
 .enroll-btn:hover {
   cursor: pointer;
   color: #0b409c;
+}
+
+/* COURSES CONTENT */
+
+ul li{
+  list-style: none;
+}
+
+.col-lg-3 {
+  padding-left: 1.5em;
+}
+
+.btn-courses {
+  background-color: #0048c5;
+  padding: 10px 24px;
+  border-radius: 10px;
+  color: whitesmoke;
+  font-weight: 500;
 }
