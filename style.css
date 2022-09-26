@@ -132,6 +132,11 @@ body {
   margin-bottom: 64px;
 }
 
+.cta-text-hiw {
+  color: rgb(49, 40, 40);
+  margin-bottom: 64px;
+}
+
 .button-join {
   padding: 10px 24px;
   font-size: 44px;
