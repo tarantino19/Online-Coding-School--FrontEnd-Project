@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+
+    </head>
+
+    <body style="background-image:url(pexels-xue-guangjian-1731427.jpg)">
+        <div class="container h6 bg-transparent">
+            <div class="navbar navbar-expand-lg bg-transparent">
+                <a href="index.html" class="navbar-brand">
+                    <img src="/Images/bemlogo.png" width="200px">
+                </a>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#NavBarMenu"
+                        >
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- item under toggler -->
+                    <div class="collapse navbar-collapse justify-content-end" id="NavBarMenu">
+                        <ul class="navbar-nav text-center">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="courses.html" class="nav-link">Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="login.html" class="nav-link">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+
+        <div class="container mt-5 text-center">
+            <h2>Backend Development</h2>
+            <p> An Overview for beginners on what Backend Development is. </p>
+        </div>
+
+        <!-- course section -->
+        <div class="container mt-5">
+            <div class="row">
+                <!-- video -->
+                <div class="col-lg-9">
+                    <div class="container-fluid">
+                        <iframe class="embed-responsive-item youtube" width="870" height="470" src="https://www.youtube.com/embed/XBu54nfzxAQ" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- end of vid sec -->
+                <div class="col-lg-3">
+                    <!-- accordion sec -->
+                    <!-- accord 1-->
+                    <div class="accordion" id="accordionOne">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#accbodOne"
+                                    aria-expanded="true"
+                                    aria-controls="accbodOne">
+                                    Introduction
+                                </button>
+                            </h2>
+                            <div id="accbodOne"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="headingOne"
+                                data-bs-parent="#accordionOne">
+                                    <div class="accordion-body text-center">
+                                        <ul style="font-size: 12pt;">
+                                            <li> <a href="#"><iconify-icon icon="ant-design:play-circle-filled"></iconify-icon>What is Backend Development?</a></li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- accord 2-->
+                    <div class="accordion" id="accordionTwo">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#accbodTwo"
+                                    aria-expanded="true"
+                                    aria-controls="accbodTwo">
+                                    Programming Languages
+                                </button>
+                            </h2>
+                            <div id="accbodTwo"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionTwo">
+                                    <div class="accordion-body text-center">
+                                    <!-- courses videos -->
+                                        <ul>
+                                            <li> <a href="#"><iconify-icon icon="ant-design:play-circle-filled"></iconify-icon>What is programming language? </a></li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- accord 3-->
+                    <div class="accordion" id="accordionThree">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button"
+                                    type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#accbodThree"
+                                    aria-expanded="true"
+                                    aria-controls="accbodThree">
+                                    How to choose your programming language?
+                                </button>
+                            </h2>
+                            <div id="accbodThree"
+                                class="accordion-collapse collapse"
+                                aria-labelledby="headingThree"
+                                data-bs-parent="#accordionThree">
+                                    <div class="accordion-body text-center">
+                                    <!-- courses videos -->
+                                        <ul>
+                                            <li> <a href="#"><iconify-icon icon="ant-design:play-circle-filled"></iconify-icon> Know the language that suits to you </a></li>
+                                        </ul>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- comment section -->
+            <div class="container">
+                <div class="row">
+                    <h4 class="pt-5 pb-3">Comments</h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg">
+                    <form>
+        
+                        <div class="form-group">
+                                <div class="comment" style="width: 65%;">
+                                    <textarea class="form-control pt-3 mb-3" id="txtarea" placeholder="Input your comment here" rows="3"></textarea>
+                                </div>
+                                
+                                <button type="text" class="btn-courses">Submit</button>
+                        </div>
+                        
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>           
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </body>
+</html>
