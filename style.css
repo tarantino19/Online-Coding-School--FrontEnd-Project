@@ -36,8 +36,12 @@ body {
   color: #00d7ac;
 }
 
-.hero-text-header, .how-text{
+ .how-text{
   margin-top: 130px !important;
+}
+
+.hero-text-header {
+  padding-top: 100px !important;
 }
 
 .hero-section {
