@@ -348,3 +348,8 @@ ul li{
   color: whitesmoke;
   font-weight: 500;
 }
+
+
+.profile-card-container {
+    max-width: 350px;
+}
